@@ -1,80 +1,228 @@
-@media (max-width: 400px) {
-  .mainSection-container {
-    flex-flow: column wrap !important;
-  }
 
-  h1 {
-    font-size: 0.6em !important;
-    letter-spacing: 0.9rem !important;
-    margin-right: -0.9rem !important;
-    font-weight: bold;
-  }
 
-  #image {
-
-    background-position: center top !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .mainSection-container {
-    flex-flow: column !important;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  h1 {
-    font-size: 1.0em !important;
-    letter-spacing: 0.4rem;
-    margin-right: -0.4rem;
-    font-weight: bold;
-  }
-
-}
-
-@media (max-width: 800px) {
-
+@media (min-height: 1300px) {
+  @media(max-width:1090px){
+    .resize {
+      width: 90%!important;
+    }
   .mainSection-container {
     flex-flow: column !important;
   }
-
-  h1 {
-    font-size: 1.0em !important;
-    letter-spacing: 0.4rem;
-    margin-right: -0.4rem;
-    font-weight: bold;
-
+  .item-mSection:nth-child(1){
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+    margin-top: 2%!important;
   }
+  .item-mSection:nth-child(2){
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+    margin-bottom: 2%!important;
+    order:3;
+  }
+  .item-mSection:nth-child(3){
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+  .textNames{
+    font-size: 115%!important;
+    letter-spacing: 0.3rem!important;
+    }
+ 
+    .item-mSection{
+      font-size: 100%!important;
+    }
+    .footer-container {
 
+      width: auto!important;
+    
+    
+    }
+    
+    
+    h1 {
+      font-size: 3.1rem !important;
+      letter-spacing: 1.8rem !important;
+      margin-right: -1.8rem !important;
+    }
+  
+    h2 {
+      font-size: 150% !important
+    }
+  }
 }
+
+
 
 @media (max-width: 1000px) {
 
   @keyframes animationImage2 {
     0% {
-      background-image: url("../img/CaleidoscopioWeb1.jpg");
+      background-image: url("../img/cal1-ext.jpg");
     }
 
     25% {
-      background-image: url("../img/CaleidoscopioWeb2.jpg");
+      background-image: url("../img/cal2-ext.jpg");
     }
 
     50% {
-      background-image: url("../img/CaleidoscopioWeb3.jpg");
+      background-image: url("../img/cal3-ext.jpg");
     }
 
     100% {
-      background-image: url("../img/CaleidoscopioWeb4.jpg");
+      background-image: url("../img/cal4-ext.jpg");
     }
   }
 
-  #image {
+  .footer-container {
     width: 100% !important;
-    height: 50vh !important;
+  }
+
+  h1 {
+    font-size: 1.2em !important;
+    letter-spacing: 0.8rem !important;
+    margin-right: -0.8rem !important;
+  }
+
+  #image {
+    width: 180% !important;
     animation-name: animationImage2 !important;
+    background-position: center top !important;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  }
+}
+
+@media (max-width: 1280px) {
+  .item-subFooter {
+    margin: 0% !important;
+  }
+
+}
+
+@media screen and (min-width: 2500px) {
+  .resize {
+    width: 80%!important;
+  }
+  .flex-container {
+    padding-top: 2.5% !important;
+  }
+
+  .item-mSection {
+    font-size: 115% !important;
+  }
+
+  .item-mSection:nth-child(1) {
+    margin-top: 2.5% !important;
+  }
+
+  .item-mSection:nth-child(2) {
+    margin-top: 2.5% !important;
+  }
+
+  .item-mSection:nth-child(3) {
+    margin-top: 2.5% !important;
+  }
+
+  h1 {
+    font-size: 3.1rem !important;
+    letter-spacing: 1.8rem !important;
+    margin-right: -1.8rem !important;
+  }
+
+  h2 {
+    font-size: 150% !important
+  }
+
+  .textNames {
+    font-size: 110% !important;
+    letter-spacing: 0.3rem !important;
+  }
+
+  .item-subFooter {
+    margin: 2% !important;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .textNames {
+    font-size: small !important;
+    letter-spacing: 0.4rem !important;
+    text-align: center!important;
+  }
+  .mainSection-container {
+    flex-flow: column !important;
+  }
+  .item-mSection {
+    font-size: 75% !important;
+  }
+
+  .item-mSection:nth-child(1) {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+  }
+
+  .item-mSection:nth-child(2) {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-bottom: 2% !important;
+    order: 3;
+  }
+
+  .item-mSection:nth-child(3) {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+
+  h1 {
+    font-size: 1.0em !important;
+    letter-spacing: 0.4rem;
+    margin-right: -0.4rem;
+    font-weight: bold;
+
+  }
+
+
+}
+
+@media (max-width: 490px) {
+  .parrafo1:after {
+    content: ""!important;
+    width: 100%;
+    color: #ffffff;
+  }
+  .textNames {
+    font-size: x-small !important;
+    letter-spacing: 0.3rem !important;
+  }
+ 
+  .item-mSection:nth-child(2) {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+
+  }
+
+  #image {
     background-position: center top !important;
   }
 }
+
+@media (max-width: 390px) {
+  .textNames {
+    font-size: xx-small !important;
+    letter-spacing: 0.3rem !important;
+  }
+
+}
+
+
 
 html,
 body {
@@ -83,7 +231,7 @@ body {
   justify-content: center;
   display: flex;
   overflow: hidden;
-  background-color: #fcfcfe;
+  background-color: #ffffff;
   margin: 0;
 }
 
@@ -104,9 +252,21 @@ h2 {
 }
 
 h3 {
-  font-size: 80%;
+  font-size: 100%;
   letter-spacing: 0.14rem;
+  font-weight: lighter;
 
+}
+.resize {
+  width: 50%;
+  height: auto;
+}
+
+
+
+a {
+  font-size: 95%;
+  letter-spacing: 0.14rem;
 }
 
 .flex-container {
@@ -115,7 +275,7 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 4%;
   padding-bottom: 5%;
 
 
@@ -154,24 +314,76 @@ h3 {
   flex-flow: row;
 }
 
+.mainSection2-container {
+  display: flex;
+  flex-flow: column;
+}
+
+
 .item-mSection {
 
   color: black;
   font-size: 80%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  margin: 5%;
+  margin-top: 5%;
   text-align: justify;
-
 }
+
+.item-mSection:nth-child(1) {
+  margin-left: 8%;
+}
+
+.parrafo1:after {
+  content: "Diseñamos y construimos de forma crítica y optimista, en cualquier";
+  width: 100%;
+  color: #ffffff;
+}
+
+.parrafo2:after {
+  content: "We design in a critic and optimistic way, in every";
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 2.5%;
+}
+
+
+.item-mSection:nth-child(2) {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.item-mSection:nth-child(3) {
+  margin-right: 8%;
+}
+
+.textNames {
+  font-size: small;
+  text-align: justify;
+  letter-spacing: 0.3rem;
+}
+
+.textNames:after {
+  content: "GONZALO BASULTO + LUCÍA DE BLAS                                                                  ";
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
+}
+
+/* .item-mSection:nth-child(1) {
+  flex-shrink: 1.2;
+ }
+ .item-mSection:nth-child(3) {
+  flex-shrink: 1.2;
+ } */
 
 .footer-container {
 
   display: flex;
   flex-flow: column;
-  flex-grow: 3;
+  align-items: center;
   width: 50vh;
-
 
 
 }
@@ -180,7 +392,8 @@ h3 {
 
   color: black;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+
+
 
 
 }
@@ -191,12 +404,16 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: column;
+
 
 }
 
 
 .item-subFooter {
   font-family: "Raleway", sans-serif;
+  padding: 2%;
+  margin: 4%;
 }
 
 a {
@@ -212,7 +429,7 @@ a:hover {
 
 #image {
   width: 200%;
-  height: 45vh;
+  height: 50vh;
   animation-name: animationImage;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -223,18 +440,18 @@ a:hover {
 
 @keyframes animationImage {
   0% {
-    background-image: url("../img/extended.jpg");
+    background-image: url("../img/cal1-ext.jpg");
   }
 
   25% {
-    background-image: url("../img/extended.jpg");
+    background-image: url("../img/cal2-ext.jpg");
   }
 
   50% {
-    background-image: url("../img/extended.jpg");
+    background-image: url("../img/cal3-ext.jpg");
   }
 
   100% {
-    background-image: url("../img/extended.jpg");
+    background-image: url("../img/cal4-ext.jpg");
   }
 }
